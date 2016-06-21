@@ -13,16 +13,17 @@
 
 Route::get('/', [
 'as' => 'home',
-'uses' => 'StoreController@index'
+'uses' => 'StoreController@home'
 ]);
 
 Route::get('{slug}', [
 	'as' => 'product-detail',
-	'uses' => 'StoreController@show'
+	'uses' => 'StoreController@producto'
 ]);
-Route::get('{quantity}', [
-	'as' => 'product-detail',
-	'uses' => 'QuantityController@show'
+
+Route::get('/categorias', [
+	'as' => 'categorias',
+	'uses' => 'StoreController@categorias'
 ]);
 
 

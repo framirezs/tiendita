@@ -13,13 +13,13 @@
 							<a href="{{ route('home') }}">Pagina Principal</a>
 						</li>
 						<li>
-							<a href="#">Categoria</a> <span class="divider">/</span>
+							<a href="#">{{ $product->Categoria }}</a> <span class="divider"></span>
 						</li>
 						<li>
-							<a href="#">Subcategoria</a> <span class="divider">/</span>
+							<a href="#">{{ $product->SubCategoria }}</a> <span class="divider"></span>
 						</li>
-						<li class="active">
-							Data
+						<li>
+							<a href="#">{{ $product->Coleccion }}</a> <span class="divider"></span>
 						</li>
 					</ul>
 					<div class="informacion_producto">
